@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+/* .App-logo {
+  height: 15vh;
+} */
+
+.App-header {
+  background-color: rgb(47, 99, 102);
+  height: 25vh;
+  padding: 5vh;
+  color: white;
+}
+
+.App-title {
+  font-size: 4.5em;
+}
+
+.App-intro {
+  font-size: large;
+  padding: 2vh;
+}
+
+#Logout {
+  background-color: rgb(250, 97, 64);
+  color: white;
+}
