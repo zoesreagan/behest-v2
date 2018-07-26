@@ -9,41 +9,46 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      loggedIn: false
+      loggedIn: true
     }
   };
 
   render() {
     return (
-      <div className="App-container">
-        <Grid>
-          <Row>
-            <Col sm={12} md={12}>
+      <div className="App">
 
-              <header className="App-header">
-                {/* <img src={logo} className="App-logo" alt="logo" /> */}
-                <h1 className="App-title">Behest</h1>
-              </header>
+        <div id="App-container">
+          <div className="container">
 
-              {this.state.loggedIn ?
-                <UserFormContainer />
+            <div className="row">
+                <div className="twelve columns">
+                    {/* <img src={logo} className="App-logo" alt="logo" /> */}
+                    <h1 className="App-title">Behest</h1>
+                </div>
+              </div>
 
-                :
-                <LoginRegister />
-              }
+              <div className="row">
+                <div className="twelve columns">
+                  {this.state.loggedIn ?
+                    <UserFormContainer />
 
-
-              <footer>
-                  <small>Based on the <a target="_blank" href="https://dementia-directive.org/">Dementia Directive</a>, created by Dr. Barak Gaster at the University of Washington.<br/>
-                         &copy; Zoe Skye, 2018</small>
-              </footer>
-
-            </Col>
-          </Row>
-        </Grid>
+                    :
+                    <LoginRegister />
+                  }
 
 
+                  <footer>
+                      <small>Based on the <a target="_blank" href="https://dementia-directive.org/">Dementia Directive</a>, created by Dr. Barak Gaster at the University of Washington.<br/>
+                             &copy; Zoe Skye, 2018</small>
+                  </footer>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
+
     );
   }
 
